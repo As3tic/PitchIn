@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat & Fund</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Light gray background */
+      color: #000; /* Black text color */
+      margin-bottom: 80px; /* Make space for the fixed footer */
+    }
+    .navbar {
+      background-color: #007bff; /* Blue background for the navbar */
+    }
+    .navbar-nav .nav-link {
+      color: #fff; /* Text color for nav links */
+    }
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa; /* Change text color on hover to light gray */
+    }
+    .navbar-toggler-icon {
+      background-color: #fff; /* Hamburger icon color */
+    }
+    .container-fluid {
+      margin-top: 20px;
+    }
+    .row {
+      margin-top: 20px;
+    }
+    .sidebar {
+      background-color: #007bff; /* Blue background for the sidebar */
+      padding: 20px;
+      color: #fff; /* White text color */
+    }
+    .chat-window {
+      background-color: #fff; /* White background for the chat window */
+      padding: 20px;
+      border: 1px solid #dee2e6; /* Border color for the chat window */
+      border-radius: 10px;
+      min-height: 400px;
+    }
+    .event {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #dee2e6; /* Border color for events */
+      border-radius: 5px;
+    }
+    .status-circle {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    .status-online { background-color: #28a745; }
+    .status-offline { background-color: #dc3545; }
+    .status-away { background-color: #ffc107; }
+    .status-invisible { background-color: #6c757d; }
+    .footer {
+      background-color: #fff; /* White background for the footer */
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Chat & Fund</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h4>Members</h4>
+        <div class="member">
+          <span class="status-circle status-online"></span> John Doe
+        </div>
+        <div class="member">
+          <span class="status-circle status-offline"></span> Jane Doe
+        </div>
+        <div class="member">
+          <span class="status-circle status-away"></span> Alice Smith
+        </div>
+        <div class="member">
+          <span class="status-circle status-invisible"></span> Bob Johnson
+        </div>
+      </div>
+      <div class="col-md-9 chat-window">
+        <div class="event">
+          <h5>Event 1</h5>
+          <p>Target: $1000</p>
+          <p>Money Raised: $500</p>
+          <p>Contributors: 10</p>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="event">
+          <h5>Event 2</h5>
+          <p>Target: $2000</p>
+          <p>Money Raised: $1200</p>
+          <p>Contributors: 15</p>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <!-- Add more events as needed -->
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Chat & Fund. All rights reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

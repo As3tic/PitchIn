@@ -5,54 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pitch In</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-    body {
-      background-color: #FFA500; /* Orange background */
-      color: #fff; /* White text color */
-      margin-bottom: 80px; /* Make space for the fixed footer */
-    }
-    .navbar {
-      background-color: #FFA500; /* Orange background for the navbar */
-    }
-    .navbar-nav .nav-link {
-      color: #fff; /* Text color for nav links */
-    }
-    .navbar-nav .nav-link:hover {
-      color: #000; /* Change text color on hover to black */
-    }
-    .navbar-toggler-icon {
-      background-color: #fff; /* Hamburger icon color */
-    }
-    .container {
-      text-align: center;
-      margin-top: 100px;
-    }
-    h1 {
-      font-size: 3em; /* Larger font size for product name */
-    }
-    p {
-      font-size: 1.5em; /* Larger font size for description */
-      font-weight: bold; /* Bold text for description */
-      margin-bottom: 40px;
-    }
-    .footer {
-      background-color: #fff; /* White background for the footer */
-      padding-bottom: 10px; /* Adjusted padding for the footer */
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 5%;
-      text-align: center;
-    }
-    .footer p {
-      color: #000; /* Black text color in the footer */
-      font-size: 0.9em; /* Slightly larger font size for the footer text */
-      padding-top: 10px; /* Added padding on top of the footer text */
-    }
-    .btn-outline-light:hover {
-      color: #000; /* Change button text color to black on hover */
-    }
-  </style>
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -83,16 +36,15 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container position-absolute top-50 start-50 translate-middle">
     <p class="display-1">Pitch In</p>
     <p class="fst-italic">Pitch in towards a good cause</p>
     <a href="./dashboard.html" class="btn btn-lg btn-primary">Login</a>
   </div>
 
-  <div class="footer">
-    <p>&copy; 2024 Pitch In. All rights reserved.</p>
-  </div>
-
+  <footer class="fixed-bottom bg-dark-subtle">
+    <p class="text-center mt-2">As3tic</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
